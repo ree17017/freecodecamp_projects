@@ -1,0 +1,20 @@
+* {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+input {
+   display: block;
+}
+
+textarea {
+   display: block;
+}
+
+input[type="checkbox"] {
+   display: inline;
+}
+
+input[type="radio"] {
+   display: inline;
+}

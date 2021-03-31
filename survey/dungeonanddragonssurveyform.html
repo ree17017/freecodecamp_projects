@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dungeon and Dragons</title>
+    <link rel="stylesheet" href="dungeonanddragonssurveyform.css" />
+  </head>
+  <h1 id="title">Dungeon and Dragons</h1>
+  <p id="description">
+    Description: What is your experince playing Dungeons and Dragons
+  </p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name-label">Name:</label>
+      <input
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Enter your name"
+        type="text"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age:</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="120"
+        placeholder="Enter Age"
+        class="form-conrol"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="role-label" for="role"
+        >Which option best describes your current role?</label
+      >
+      <select
+        id="dropdown"
+        name="role"
+        class="form-control"
+        class="form-control"
+        required
+      >
+        <option name="role" value="Dungeon Master">Dungeon Master</option>
+        <option name="role" value="Player">Player</option>
+        <option name="role" value="Other">Other</option>
+      </select>
+      <div class="form-group">
+        <h3>What version of Dungeons and Dragons did you start?</h3>
+        <label id="twodotzero-label" for="version"
+          ><input
+            type="radio"
+            name="version"
+            value="2.0"
+            class="input-radio"
+          />
+
+          Dungeon and Dragons 2.0</label
+        ><br />
+        <label id="twodotzero-label" for=""
+          ><input
+            type="radio"
+            name="version"
+            value="3.0"
+            class="input-radio"
+          />
+
+          Dungeon and Dragons 3.0</label
+        ><br />
+        <input type="radio" name="version" value="3.5" class="input-raido" />
+
+        <label id="twodotzero-label" for="3.5">Dungeon and Dragons 3.5</label
+        ><br />
+        <input type="radio" name="version" id="version-4.0" value="4.0" />
+
+        <label id="twodotzero-label" for="version"
+          >Dungeon and Dragons 4.0</label
+        ><br />
+        <input type="radio" id="version-5.0" value="5.0" name="version" />
+        <label id="twodotzero-label" for="5.0">Dungeons and Dragons 5.0</label>
+      </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="form-group">
+      <h3>Perfered class</h3>
+      <input
+        type="checkbox"
+        name="Cleric"
+        value="cleric"
+        class="input-checkbox"
+      />
+      <label id="clierc-label" for="cleric">Cleric</label>
+      <input
+        type="checkbox"
+        name="Fighter"
+        value="Fighter"
+        class="input-checkbox"
+      />
+      <label id="fighter-label" for="fighter">Fighter</label>
+      <input
+        type="checkbox"
+        name="Ranger"
+        value="Ranger"
+        class="input-checkbox"
+      />
+      <label id="Ranger-label" for="Ranger">Ranger</label>
+      <input
+        type="checkbox"
+        name="Wizard"
+        value="Wizard"
+        class="input-checkbox"
+      />
+      <label id="wizard-label" for="wizard">Wizard</label>
+      <input
+        type="checkbox"
+        name="Barbarin"
+        value="Barbarin"
+        class="input-checkbox"
+      />
+      <label id="barbarin-label" for="barbarin">Barbarin</label>
+    </div>
+    <div class="form-group">
+      <label id="info-label"
+        ><h6>Any other infomation you would like to share.</h6>
+      </label>
+      <textarea class="form-control" id="info" name="info"></textarea>
+    </div>
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </form>
+</html>
