@@ -1,0 +1,19 @@
+$test-color: black;
+
+#main {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   text-align: center;
+}
+#title {
+   font-size: 30px;
+   font-weight: 900;
+}
+img {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   padding-bottom: 20px;
+   max-width: 100%;
+}
