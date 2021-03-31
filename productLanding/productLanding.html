@@ -1,75 +1,116 @@
 <html>
-	<header id="header">
-		<nav id="nav-bar">
-			<a href="#landingPage" class="nav-link">Landing Page</a>
-			<a href="#singlePage" class="nav-link">SPA</a>
-			<a href="#form" class="nav-link">Questions</a>
-		</nav>
-		<img
-			width="100"
-			src="http://joshuarreed.com/me.jpg"
-			id="header-img"
-			alt="Joshua Reed"
-		/>
-		<h1 id="title">Reed's Web Shop</h1>
-	</header>
-	<video width="320" height="240" controls>
-		<source src="https://youtu.be/BUrjv1Uh4yQ" />
-		Your browser does not support the video tag.
-	</video>
-	<br />
-	<p id="description">
-		Joshua Reed is a profestional Software Engineer with 3 years of experinces
-		creating web applications for enterprise companyies.
-	</p>
-	<div class="flex-container">
-		<div id="landingPage">
-			<h3 id="landingPage-title">Landing Page</h3>
-			<p id="landingPage-description">
-				Create a customer action landing page for your busniess or next event.
-			</p>
-			<p>60$ per hour</p>
-		</div>
-		<div id="singlePage">
-			<h3 id="singlePage-title">Single Page Application (SPA)</h3>
-			<p>
-				Create a single page application for any business or personal needs.
-			</p>
-			<p>60$ per hour</p>
-		</div>
-	</div>
-	<h4>Contact Me</h4>
-	<form
-		id="form"
-		method="post"
-		action="https://www.freecodecamp.com/email-submit"
-	>
-		<label id="name-label" for="name">Name</label>
-		<input type="text" id="name" name="name" placeholder="Name" required />
-		<label id="number-label" for="number">Phone Number</label>
-		<input
-			type="number"
-			min="0"
-			max="100000"
-			id="number"
-			placeholder="Phone Number"
-			name="number"
-			required
-		/>
-		<label id="email-label" for="email">Email</label>
-		<input
-			type="email"
-			id="email"
-			name="email"
-			placeholder="Enter Email"
-			required
-		/>
-		<label id="questions-label" for="questions">Questions:</label>
-		<textarea
-			id="questions"
-			name="questions"
-			placeholder="Questions"
-		></textarea>
-		<input type="submit" id="submit" value="Submit" />
-	</form>
+  <head>
+    <style>
+      nav {
+         position: -webkit-sticky; /* Safari */
+         position: sticky;
+         top: 0;
+      }
+
+      .flex-container {
+         display: flex;
+      }
+
+      .flex-container > div {
+         border: 1px solid black;
+         margin: 10px;
+         padding: 20px;
+         font-size: 16px;
+         overflow: inherit;
+      }
+
+      #header-title {
+         display: inline;
+      }
+
+      #header-img {
+         display: inline;
+      }
+
+      input,
+      textarea {
+         display: block;
+         width: 200px;
+      }
+
+            @media only screen and (max-width: 600px) {
+               body {
+                  background-color: lightblue;
+               }
+    </style>
+  </head>
+  <header id="header">
+    <nav id="nav-bar">
+      <a href="#landingPage" class="nav-link">Landing Page</a>
+      <a href="#singlePage" class="nav-link">SPA</a>
+      <a href="#form" class="nav-link">Questions</a>
+    </nav>
+    <img
+      width="100"
+      src="http://joshuarreed.com/me.jpg"
+      id="header-img"
+      alt="Joshua Reed"
+    />
+    <h1 id="title">Reed's Web Shop</h1>
+  </header>
+  <video id="video" width="320" height="240" controls>
+    <source src="https://youtu.be/BUrjv1Uh4yQ" />
+    Your browser does not support the video tag.
+  </video>
+  <br />
+  <p id="description">
+    Joshua Reed is a profestional Software Engineer with 3 years of experinces
+    creating web applications for enterprise companyies.
+  </p>
+  <div class="flex-container">
+    <div id="landingPage">
+      <h3 id="landingPage-title">Landing Page</h3>
+      <p id="landingPage-description">
+        Create a customer action landing page for your busniess or next event.
+      </p>
+      <p>60$ per hour</p>
+    </div>
+    <div id="singlePage">
+      <h3 id="singlePage-title">Single Page Application (SPA)</h3>
+      <p>
+        Create a single page application for any business or personal needs.
+      </p>
+      <p>60$ per hour</p>
+    </div>
+  </div>
+  <h4>Contact Me</h4>
+  <form
+    id="form"
+    method="post"
+    action="https://www.freecodecamp.com/email-submit"
+  >
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required />
+    <label id="number-label" for="number">Phone Number</label>
+    <input
+      type="number"
+      min="0"
+      max="100000"
+      id="number"
+      placeholder="Phone Number"
+      name="number"
+      required
+    />
+    <label id="email-label" for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter Email"
+      required
+    />
+    <label id="questions-label" for="questions">Questions:</label>
+    <textarea
+      id="questions"
+      name="questions"
+      placeholder="Questions"
+    ></textarea>
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
