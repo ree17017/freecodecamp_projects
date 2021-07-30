@@ -1,17 +1,63 @@
-<htmlj
+<html>
   <head>
     <meta charset="UTF-8" />
     <title>Technical Documentation Page</title>
+    <style>
+      #navbar{
+        position: fixed;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: black;
+      }
+      #navbar a {
+        display: block;
+        padding: 10px 30px;
+        color: darkred;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      #navbar li {
+        color: gray;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+      }
+
+      #main-doc{
+        position:absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+      }
+      header {
+        font-size: 1.8em;
+        color: black;
+        text-align: center;
+        font-weight: 300;
+      }
+
+      @media only screen and (max-width: 400px) {
+        #main-doc {
+          margin-left: 10px;
+        }
+      }
+    </style>
   </head>
   <nav id="navbar">
-    <header>
-      Text that describes the topic of the technical doc
+    <header> D&D Docs </header>
       <ul>
-        <li><a href="#" class="nav-link">Place 1</a></li>
-        <li><a href="#" class="nav-link">Place 2</a></li>
-        <li><a href="#" class="nav-link">Place 3</a></li>
+        <li><a href="#Introduction" class="nav-link">INTRODUCTION</a></li>
+        <li><a href="#race_selection" class="nav-link">RACE SELECTION</a></li>
+        <li><a href="#class_selection" class="nav-link">CLASS SELECTION</a></li>
+        <li><a href="#personality" class="nav-link">PERSONALITY</a></li>
+        <li><a href="#flaw" class="nav-link">FLAW</a></li>
       </ul>
-    </header>
   </nav>
   <main id="main-doc">
     <section id="Introduction" class="main-section">
@@ -46,7 +92,6 @@
     <section id="class_selection" class="main-section">
       <header id="calss_selection">Class Selection</header>
 
-        <li><a href="#" class="nav-link">>Place 4</a></li>
       <p>
         Class selection can be hard and intemidating chore. I would stick to a
         melee class or cleric as my first time class. Spell casters like the
@@ -69,7 +114,6 @@
     </section>
     <section id="personality" class="main-section">
       <header id="personality">Personality</header>
-        <li><a href="#" class="nav-link">>Place 4</a></li>
       <p></p>
 
       <ul>
@@ -83,7 +127,6 @@
     </section>
     <section id="flaw" class="main-section">
       <header id="flaw">Flaw</header>
-        <li><a href="#" class="nav-link">>Place 4</a></li>
       <p></p>
       <p></p>
       <ul>
