@@ -1,26 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<style>
+    #welcome-section {
+        height: 100vh;
+    }
+    
+    nav {}
+    
+    @media screen and (min-width: 480px) {
+        nav {
+            color: blue;
+        }
+    }
+</style>
+<style>
+    #navbar {
+        position: fixed;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: black;
+    }
+    
+    #navbar a {
+        display: block;
+        padding: 10px 30px;
+        color: darkred;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    #navbar li {
+        color: gray;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+    }
+    
+    #main-window {
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+        line-height: 2;
+    }
+    
+    @media only screen and (max-width: 400px) {
+        #main-doc {
+            margin-left: 10px;
+        }
+    }
+    
+    #welcome-section {
+        box-shadow: 0 4px 8 px 0 rgba(0 0 0 0.2);
+        transition: 0.3s;
+        width: 40%;
+        margin: auto auto;
+    }
+    
+    img {
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+</style>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua Reed</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav id="navbar">
-      <li><a href="#projectst ">Section of the page</a></li>
-      <div id="profile-link">
-        <li><a href="github.com">github</a></li>
-        <li><a href="fcc">FCC Profile</a></li>
-      </div>
+        <ul>
+            <li>
+                <h1>Welcome</h1>
+            </li>
+            <li>
+                <a href="github.com/ree17017" id="profile-link" target="_blank">github</a
+          >
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/reed.josh.r" target="_blank"
+            >FCC Profile</a
+          >
+        </li>
+        <li><a href="#projects">Projects</a></li>
+        </ul>
     </nav>
-    <div id="welcome-section">
-      <h1>Contains text</h1>
+    <div id="main-window">
+        <div id="welcome-section">
+            <div class="flex-container">
+                <h1>About Joshua</h1>
+                <img src="https://joshuarreed.com/wp-content/uploads/2018/12/me.jpg" alt="Joshua Reed" />
+            </div>
+            <div>
+                I am currently working at Adobe as a Software Engineer to help build and develop a modern work management platform. Area of ownership I work on is Agile Story Boards, Notifications, Announcements, and Email. Graduated from Brigham Young University – Idaho
+                in April 2020 with a Bachelor of Science in Software Engineering.
+            </div>
+        </div>
+        <div id="projects">
+            <div class="project-tile">
+                <h1>Projects</h1>
+            </div>
+            <a href="">Link to project</a>
+        </div>
     </div>
-    <div id="projects">
-      <div class="project-tile"></div>
-      <a href="">Link to project</a>
-    </div>
-  </body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
