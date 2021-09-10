@@ -5,7 +5,32 @@
         height: 100vh;
     }
     
-    nav {}
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .card {
+        border: 1px solid black;
+        margin: 10px;
+        width: 250px;
+        height: 200px;
+        border-radius: 8%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    
+    .card h3 {
+        margin: auto auto;
+        position: relative;
+        top: 0;
+        left: 20px;
+        padding: 8px 8px;
+    }
+    
+    .card>div {
+        padding: 8px 8px;
+    }
     
     @media screen and (min-width: 480px) {
         nav {
@@ -110,9 +135,45 @@
         </div>
         <div id="projects">
             <div class="project-tile">
-                <h1>Projects</h1>
+                <h3>Projects</h3>
             </div>
-            <a href="">Link to project</a>
+            <div class="container">
+                <div class="card">
+                    <h3>
+                        <a target="_blank" href="https://codepen.io/reed_josh/project/editor/ZQKEPQ">Tribute Page</a
+              >
+            </h3>
+            <div class="description">
+              Description: Tribute page about Hope Reed.
+            </div>
+          </div>
+          <div class="card">
+            <h3>
+              <a target="_blank" href="https://codepen.io/reed_josh/pen/abmomPB"
+                >Survey Form</a
+              >
+            </h3>
+            <div class="description">
+              Description: Survey form for Dungeons and Dragons
+            </div>
+          </div>
+          <div class="card">
+            <h3>
+              <a target="_blank" href="https://codepen.io/reed_josh/pen/abmbzRd"
+                >Project Landing Page</a
+              >
+            </h3>
+            <div class="description">Description: Project landing page.</div>
+          </div>
+          <div class="card">
+            <a target="_blank" href="https://codepen.io/reed_josh/full/rNMVOBM">
+              <h3>Technical Documentation Page</h3>
+            </a>
+                        <div class="description">
+                            Description: Technical Documentation for Dungeon and Dragons.
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
